@@ -12,10 +12,10 @@ var App = () => (
     </nav>
     <div className="row">
       <div className="col-md-7">
-        <VideoPlayer />
+        <VideoPlayer videos={exampleVideoData}/>
       </div>
       <div className="col-md-5">
-        <VideoList videos ={exampleVideoData} />
+        <VideoList videos={exampleVideoData} />
       </div>
     </div>
   </div>
