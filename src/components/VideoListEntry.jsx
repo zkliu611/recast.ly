@@ -1,7 +1,5 @@
-
-
 var VideoListEntry = (props) => {
-  return( <div className="video-list-entry media" onClick = {(event) => props.onClick(event, props.video)}>
+  return ( <div className="video-list-entry media" onClick = {(event) => props.onClick(event, props.video)}>
     <div className="media-left media-middle">
       <img className="media-object" src={props.video.snippet.thumbnails.default.url} alt="" />
     </div>
@@ -10,7 +8,7 @@ var VideoListEntry = (props) => {
       <div className="video-list-entry-detail">{props.video.snippet.description}</div>
     </div>
   </div>
-  )
+  );
 };
 
 

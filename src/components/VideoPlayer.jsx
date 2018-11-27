@@ -8,7 +8,7 @@ var VideoPlayer = (props) => {
       <div>{props.video.snippet.description}</div>
     </div>
   </div>
-  )
+  );
 };
 
 // PropTypes tell other developers what `props` a component expects
