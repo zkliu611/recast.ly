@@ -1,13 +1,10 @@
 var searchYouTube = (options, callback) => {
   $.ajax({
-    url: 'https://www.googleapis.com/youtube/v3/search',
-    key: 'AIzaSyDajm7TgH_M-VoKPa05qktlkkY--mXEL4w',
+    url: `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${options.query}&maxResults=${options.max}&key=${options.key}&type=video&videoEmbeddable=true`,
     type: 'GET',
     dataType: 'json',
-    query: options,
-    max: 5,
-    videoEmbeddable: true,
-    success: callback
+    success: (data) =>
+      callback(data)
   });
 };
 
